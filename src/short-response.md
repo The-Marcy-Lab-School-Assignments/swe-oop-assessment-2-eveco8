@@ -72,7 +72,7 @@ console.log(counterB.count);
 
 ## Response 2
 
-The `this` keyword refers to the **_object_** that is running the code in that moment. It is useful because it helps the compiler know which object to use at any moment. In the code above, `this` refers to `counterA` and `counterB` because they're the objects _invoking_ the **_method_**.
+The `this` keyword is the **_object_** that is currently running the code. It is useful because it lets the compiler know which object to use at any moment. In the code above, `this` refers to `counterA` and `counterB` because they're the objects _invoking_ the **_method_**.
 
 ## Question 3
 

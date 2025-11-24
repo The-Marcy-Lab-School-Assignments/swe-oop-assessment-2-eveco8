@@ -44,20 +44,5 @@ class iPhone extends Phone {
 
 // TEST YOUR CODE HERE
 
-const flipPhone = new Phone("Nokia", "Flip", "TimeToLearn882");
-console.log(flipPhone); // Phone { brand: "Nokia", model: "Flip", batteryLevel: 100 }
-
-// 1. Making a call and checking battery
-console.log(flipPhone.makeCall("123-456-7890")); // Calling 123-456-7890
-console.log(flipPhone.batteryLevel); // 95 <-- *batteryLevel
-
-// 2. Charging and checking battery
-console.log(flipPhone.charge("123-456-7890")); // Phone fully charged
-console.log(flipPhone.batteryLevel); // 100 <-- *batteryLevel
-
-// 3. Unlocking the phone: Fixed Version 
-console.log(flipPhone.unlock("TimeToLearn882")); // Phone unlocked
-console.log(flipPhone.unlock("TimeToLearn883")); // Invalid Password
-
 // DO NOT REMOVE
 module.exports = { Phone, iPhone };
