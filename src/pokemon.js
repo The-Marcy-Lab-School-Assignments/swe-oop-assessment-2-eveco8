@@ -1,45 +1,51 @@
 class Pokemon {
-    #health = 100
-    #level = 1
+  #health = 100;
 
-    static allPokemon = []
+  #level = 1;
 
-    constructor(name, type) {
-        this.name = name
-        this.type = type
+  static allPokemon = [];
 
-        Pokemon.allPokemon.push(this)
-    }
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
 
-    get health() {
-        return this.#health
-    }
-    get level() {
-        return this.#level
-    }
+    Pokemon.allPokemon.push(this);
+  }
 
-    levelUp() {
-        this.#level++
-        this.#health += 10
-        console.log(`${this.name} leveled up to level ${this.level}!`)
-    }
-    isFainted() {
-        if (this.#health <= 0) {
-            return true
-        } else {
-            return false 
-        }
-    }
-    attack(targetPokemon) {
-        targetPokemon - this.#health 
-    }
+  get health() {
+    return this.#health;
+  }
 
-    static getTotalPokemon() {
-        return Pokemon.allPokemon.length
+  get level() {
+    return this.#level;
+  }
+
+  levelUp() {
+    this.#level++;
+    this.#health += 10;
+    console.log(`${this.name} leveled up to level ${this.level}!`);
+  }
+
+  isFainted() {
+    if (this.#health <= 0) {
+      return true;
     }
-    static findByName() {
-        return Pokemon.allPokemon.find(pokemon => pokemon === this.name)
-    }
+    return false;
+  }
+
+  attack(targetPokemon) {
+    const attack = this.#level * 10;
+    targetPokemon.#health -= attack;
+    console.log(`${this.name} attacked ${targetPokemon.name}`);
+  }
+
+  static getTotalPokemon() {
+    return Pokemon.allPokemon.length;
+  }
+
+  static findByName(name) {
+    return Pokemon.allPokemon.find((pokemon) => pokemon.name === name);
+  }
 }
 
 // TEST YOUR CODE HERE
