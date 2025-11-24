@@ -18,8 +18,8 @@ class BankAccount {
     return this.#balance;
   }
 
-  withdraw(amount) { 
-    // if (amount > this.balance) 
+  withdraw(amount) {
+    // if (amount > this.balance)
     if (amount > this.#balance) {
       console.log(`Withdrawal failed. Insufficient funds.`);
     } else {

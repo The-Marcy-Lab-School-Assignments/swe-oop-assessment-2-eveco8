@@ -20,9 +20,9 @@ class Phone {
 
   unlock(password) {
     if (this.#password === password) {
-      return 'Phone unlocked';
+      return true;
     }
-    return 'Invalid Password';
+    return false;
   }
 }
 

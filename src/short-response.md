@@ -72,7 +72,7 @@ console.log(counterB.count);
 
 ## Response 2
 
-The `this` keyword means the **_object_** that is running the code in that moment. It is useful because it helps the compiler know which object to use at any moment. In the code above, `this` refers to `counterA` and `counterB` because they're the objects _invoking_ the **_method_**.
+The `this` keyword refers to the **_object_** that is running the code in that moment. It is useful because it helps the compiler know which object to use at any moment. In the code above, `this` refers to `counterA` and `counterB` because they're the objects _invoking_ the **_method_**.
 
 ## Question 3
 
@@ -114,4 +114,4 @@ You're building a game where players can raise different digital pets: Cats, Dog
 
 ## Response 4
 
-First, I would make a general `Pet` class to store all the **_properties/methods_** that the pets have the same. Then I'll make a class for each type of pet (`Cats`, `Dogs`, `Birds`) and in each class use inheritance to _inherit_ the properties/methods from the `Pet` class and lastly add the additional properties/methods specific to each class. One advantage of using inheritance here is that there would be _no repetition_ of code which saves time and reduces the chance of mistakes.
+First, I would make a general `Pet` class to store all the **_properties/methods_** that the pets have the same. Then I'll create a class for each type of pet (`Cats`, `Dogs`, `Birds`) and in each class, use inheritance to inherit the properties/methods from the `Pet` class, and finally add the additional properties/methods specific to each class. One advantage of using inheritance here is that there would be no repetition of code, which saves time and reduces the likelihood of mistakes.
