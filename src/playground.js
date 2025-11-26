@@ -44,3 +44,12 @@
 // console.log(dog.speak())
 
 
+const menu = {
+    tacos: 3,
+    salchicha: 3
+}
+
+console.log(menu)
+menu = brownie
+
+addToMenu(brownie)
